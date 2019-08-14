@@ -16,8 +16,8 @@ import solvers
 solvers.verbose = True
 
 # test problem
-N = 100
-(t0, tend) = (0, 10)
+N = 200
+(t0, tend) = (0, .2)
 ivp = problems.Heat2D_IVP(N, [t0, tend])
 rsol = ivp.rsol(tend)
 
@@ -35,7 +35,7 @@ def mrms_solver():
 
 
 def solve_ivp_solver():
-    meth = 'BDF'
+    meth = 'RK23'
     tol = 1e-4
     sol = solve_ivp(ivp.getf, ivp.interval, ivp.y0
                                     , jac = ivp.A

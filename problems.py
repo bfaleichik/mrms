@@ -118,9 +118,10 @@ class DiagonalLinear_IVP:
             
         self.rsolfun = np.vectorize(rsolfun)
 
+
     def b(self, t):  # vector b
         return self.vb
-        
+
     def getf(self, t, y):  # ODE right-hand side
         return self.A @ y + self.vb
 
