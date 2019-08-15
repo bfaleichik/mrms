@@ -2,7 +2,7 @@
 """
 Created on Fri Jul  5 11:57:11 2019
 
-@author: faleichik
+@author: Boris Faleichik
 """
 import numpy as np
 from scipy.integrate import solve_ivp

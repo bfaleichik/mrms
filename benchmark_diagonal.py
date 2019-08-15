@@ -20,7 +20,7 @@ solvers.verbose = True
 # Set do_test to True to perform the numerical experiment,
 # otherwise the data for plotting will be taken from mrms_file
 # specified below
-do_test = False
+do_test = True
 
 
 n = 100
@@ -37,7 +37,8 @@ ivp = problems.DiagonalLinear_IVP(evals, vb, y0, [t0, tend])
 rsol = ivp.rsol(tend)
 
 
-#bdf_file = 'd:/diag{}-bdf.pcl'.format(lamin)
+
+# The filenames below should be valid in order to store or get the experiment data
 mrms_file = 'd:/diag{}+{}-mrms.pcl'.format(lamin, kshift)
 picture_file = 'd:/diag{}+{}.pdf'.format(lamin, kshift)
 

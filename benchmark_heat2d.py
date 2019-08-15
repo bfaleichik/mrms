@@ -2,7 +2,7 @@
 """
 Created on Fri Jul  5 11:57:11 2019
 
-@author: faleichik
+@author: Boris Faleichik
 """
 
 import numpy as np
@@ -16,11 +16,12 @@ solvers.verbose = True
 # Set do_test to True to perform the numerical experiment,
 # otherwise the data for plotting will be taken from bdf_file and mrms_file
 # specified below
-do_test = False
+do_test = True
 
 # the grid dimension 
 N = 20
 
+# The filenames below should be valid in order to store or get the experiment data
 bdf_file = 'd:/N{}-bdf.pcl'.format(N)
 mrms_file = 'd:/N{}-mrms.pcl'.format(N)
 picture_file = 'd:/N{}.pdf'.format(N)
